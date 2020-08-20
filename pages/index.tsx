@@ -1,6 +1,8 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
-export default function Home() {
+import SideBar from 'components/organisims/sidebar';
+
+const Home = () => {
   return (
     <div className="container">
       <Head>
@@ -9,6 +11,8 @@ export default function Home() {
       </Head>
 
       <main>
+        <SideBar />
+
         <h1 className="title">
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
@@ -207,3 +211,5 @@ export default function Home() {
     </div>
   )
 }
+
+export default Home
